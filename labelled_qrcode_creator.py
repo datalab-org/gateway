@@ -20,7 +20,7 @@ def create_label(url, item_id: str = None, name: str = None, hcodes: list = []):
     qr_img = create_qr_img(url)
     # resize ito size of label printer
     qr_img = qr_img.resize((106, 106))
-    qr_img.save("qr_only.png")
+    qr_img.save("test_qr_only.png")
 
     background_img = Image.new("RGB", (500, 106), color="white")
     background_img.paste(qr_img, (0, 0), qr_img.convert("RGBA"))
@@ -33,5 +33,5 @@ def create_label(url, item_id: str = None, name: str = None, hcodes: list = []):
     d.text((120, 40), name, fill="black", font=small_font)
     d.text((120, 72), " ".join([h for h in hcodes]), fill="black", font=small_font)
 
-    background_img.save("test.png")
+    background_img.save("test_full_label.png")
     return background_img

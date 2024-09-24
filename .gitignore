@@ -1,3 +1,6 @@
+# gateway additions
+test*.png
+
 # Datalab database dirs - these can be removed once we have a better place for them
 files/
 uploads/
