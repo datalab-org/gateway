@@ -1,0 +1,28 @@
+[project]
+name = "gateway_datalab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "brother-ql>=0.9.4",
+    "fastapi[standard]>=0.115.0",
+    "pillow==9.5.0",
+    "qrcode>=7.4.2",
+]
+
+[tool.ruff]
+
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+
+select = ["E", "F", "I", "W", "Q"]
+ignore = ["E501", "E402"]             
+fixable = ["A", "B", "C", "D", "E", "F", "I"]
+unfixable = []
+per-file-ignores = {}
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
