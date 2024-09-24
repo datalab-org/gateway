@@ -1,0 +1,5 @@
+# save this file as .env and fill out the needed printer configuration
+
+GATEWAY_PRINTER_VENDOR_ID="0x..."
+GATEWAY_PRINTER_PRODUCT_ID="0x..."
+GATEWAY_PRINTER_SERIAL_NO="..."
