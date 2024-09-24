@@ -26,10 +26,11 @@ uv run fastapi dev main.py
 ```
 
 And some useful `curl` commands for testing:
+<<<<<<< HEAD
 ```bash
 curl -X POST "http://127.0.0.1:8000/print-label" -F "file=@/resources/example_image.png"
 ```
 
 ```bash
-curl -X POST "http://127.0.0.1:8000/print-label" -H "Content-Type: application/json" -d '{"item_id":"abc100", "name":"a laboratory sample","url":"https://datalab.bocarslygroup.com", "hcodes":["h101", "h202"], "dryrun":0}
+curl -X POST "http://127.0.0.1:8000/print-label" -H "Content-Type: application/json" -d '{"item_id":"abc100", "name":"a laboratory sample","url":"https://demo.datalab-org.io", "hcodes":["h101", "h202"], "dryrun":0}
 ```

@@ -20,7 +20,7 @@ class LabelInfo(BaseModel):
     item_id: str
     name: str = ""
     url: AnyUrl = ""
-    hcodes: list[str]
+    hcodes: list[str] = []
     dryrun: bool = False
 
 
