@@ -1,6 +1,7 @@
 import io
 
 from fastapi import FastAPI, File, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from PIL import Image, UnidentifiedImageError
 from pydantic import AnyUrl, BaseModel
 from typing_extensions import Annotated
@@ -9,6 +10,14 @@ from labelled_qrcode_creator import create_label
 from print_to_brother import print_label_from_image
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/")
