@@ -28,7 +28,7 @@ uv run fastapi dev main.py
 And some useful `curl` commands for testing:
 
 ```bash
-curl -X POST "http://127.0.0.1:8000/print-label-image" -F "file=@/resources/example_image.png"
+curl -X POST "http://127.0.0.1:8000/print-label-image" -F "file=@resources/example_image.png"
 ```
 
 ```bash
