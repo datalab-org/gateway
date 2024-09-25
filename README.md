@@ -18,7 +18,7 @@ To get the USB identifier for a printer on mac, use:
 system_profiler SPUSBDataType
 ```
 
-The format of the identifier is: "usb://{vendor id}:{product id}/{serial number}
+The format of the identifier is: `usb://{vendor id}:{product id}/{serial number}`
 
 To run the server:
 ```bash
